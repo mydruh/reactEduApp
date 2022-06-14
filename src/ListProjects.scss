@@ -1,0 +1,151 @@
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	@media (max-width: 1467px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media (max-width: 700px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@media (max-width: 420px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.listProjectsMain{
+	margin-left: 0px !important;
+    padding-top: 0px !important;
+    margin-right: 0px !important;
+}
+
+.section-list-projects {
+
+	margin-left: 207px;
+    margin-right: 149px;
+
+	.cards-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 60px;
+		margin-top: 50px;
+
+		@media (min-width: 1700px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media (max-width: 991px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.list__group-text {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		padding-top: 102px;
+		padding-bottom: 50px;
+		border-bottom: 3px solid #ff5454;
+
+		@media (max-width: 991px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.sortInput{
+			height: 50px;
+    		padding: 10px;
+    		border: 1px solid #d9dadc;
+    		transition: 0.6s ease;
+    		font-size: 18px;
+    		width: 500px;
+    		font-size: 18px;
+		}
+	}
+
+	.list__title {
+		font-size: 48px;
+		color: black;
+
+		@media (max-width: 420px) {
+			font-size: 30px;
+		}
+	}
+
+	.list__button {
+		width: 350px;
+		height: 60px;
+		font-size: 24px;
+		float: right;
+
+		@media (max-width: 991px) {
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
+
+	.card-event {
+		border-radius: 10px;
+		border: 2px solid #716D6A;
+		width: auto;
+		padding: 30px 30px;
+		max-height: 300px;
+		margin-right: 20px;
+
+		@media (max-width: 700px) {
+			margin-right: 0;
+		}
+
+		.card-header {
+			display: flex;
+			align-items: center;
+		}
+
+		.card-row__block:first-child {
+			margin-right: 15px;
+		}
+
+		.card-title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.card-main .card-main-group {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+		}
+
+		.card-main .card-row__block {
+			display: flex;
+			align-items: center;
+		}
+
+		.card-subtext {
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		.card-description {
+			max-width: 400px;
+			margin-top: 20px;
+		}
+	}
+
+	.card-event:hover{
+		box-shadow: 0 0 8px 2px #ff8585;
+    	transition: 0.3s;
+	}
+
+	.card-event:last-child {
+		margin-bottom: 200px;
+	}
+}

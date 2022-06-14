@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;  
+  }  
+
+  body{
+	color: white !important;
+  }
+
+  .backgroundPolyTech{
+	background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("http://edu.aspc.kz/pluginfile.php/1/theme_moove/loginbgimg/1644640604/Screenshot_2.png") no-repeat;
+	background-position-x: 0%, 0%;
+	background-position-y: 0%, 0%;
+	background-size: auto, auto;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  .logoBlock{
+	text-align: center;
+  }
+
+  .loginForm{
+	padding: 30px;
+	background: #222;
+	border-radius: 15px;
+	border: 1px solid red;
+  }
+
+  .section-login .main-title {
+	font-size: 48px;
+	margin-bottom: 40px;
+	padding-top: 40px;
+  }
+  
+  hr {
+	border: 1px solid #eee;
+  }
+  
+  .section-login  .main-form {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+  }
+  
+  .section-login  .main-form .group {
+	display: grid;
+  }
+  
+  .section-login  .main-form .group .group-label  {
+	margin-bottom: 10px;
+	font-weight: 600;
+  }
+  
+  .section-login  .main-form .group:nth-child(2) {
+	margin-top: 40px;
+	margin-bottom: 40px;
+  }
+  
+  .section-login  .main-form .group input {
+	height: 50px;
+	padding: 10px;
+	border: 1px solid #d9dadc;
+	transition: 0.6s ease;
+  }
+  
+  .section-login  .main-form .group input:focus {
+	border: 1px solid #222326;
+	border-radius: 0;
+	outline: none;
+  }
+  
+  .section-login  .main-form .button-submit {
+	width: 100%;
+	padding: 10px 10px 10px 5px;
+	border: none;
+	background-color: #337D5C;
+	color: #fff;
+	font-weight: 600;
+	height: 50px;
+	font-size: 16px;
+  }
+  
+  .section-login  .main-form form {
+	margin-bottom: 80px;
+  }
+  
+  
+  .section-login  .main-form-subtitle {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 20px;
+  }
+  
+  .section-login  .main-form-register {
+	height: 50px;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+  }
+  
+  .section-login .main-form-register {
+	width: 100%;
+	background-color: #D63535;
+	margin-bottom: 60px;
+  }
+  
+  @media (max-width: 835px) {
+	  .section-login {
+		  width: auto;
+	  }
+  
+  }
+  
+  @media (max-width: 650px) {
+	.section-login {
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+  
+	.section-login  .main-form {
+	  width: auto;
+	  margin: auto;
+	  margin-top: 160px;
+	}
+  }

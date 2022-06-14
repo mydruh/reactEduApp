@@ -1,0 +1,93 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+h2{
+	color: black;
+}
+
+.section-edit-project {
+	.section-title {
+		font-size: 48px;
+
+		@media (max-width: 699px) {
+			font-size: 36px;
+		}
+	}
+
+	.section-block {
+		.main-form {
+			margin-top: 80px;
+		}
+
+		.group {
+			display: grid;
+			margin-bottom: 40px;
+			&-form {
+				@include input;
+				width: 500px;
+				font-size: 18px;
+
+				@media (max-width: 699px) {
+					width: 100%;
+				}
+			}
+			&-label {
+				margin-bottom: 10px;
+				color: black;
+			}
+
+			.label-description {
+				height: 200px;
+			}
+
+			&__subtitle {
+				margin-bottom: 25px;
+				color: black;
+			}
+
+			.group-radio {
+				display: grid;
+				grid-template-columns: repeat(2, 250px);
+
+				@media (max-width: 699px) {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+			.radio {
+				&__text {
+					margin-left: 20px;
+					color: black;
+				}
+				
+				&__input {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}		
+	}
+	.edit-project {
+		&__button-create {
+			@include buttonSolid;
+			background-color: $green;
+
+			@media (max-width: 699px) {
+				width: 100%;
+			}
+		}
+
+		&__button-cancel {
+			@include buttonSolid;
+			background-color: $red;
+			margin-top: 40px;
+			margin-bottom: 200px;
+			text-align: center;
+			padding-top: 20px;
+
+			@media (max-width: 699px) {
+				width: 100%;
+			}
+		}
+	}
+}

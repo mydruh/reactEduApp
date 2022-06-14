@@ -1,0 +1,49 @@
+@mixin title($fontSize, $color) {
+    font-size: $fontSize;
+    font-weight: 700;
+    color: #fff;
+}
+
+@mixin buttonSolid {
+    width: 500px;
+    height: 60px;
+    border: none;   
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    transition: 0.6s ease;
+}
+
+@mixin buttonOutline ($color, $borderColor) {
+    width: 500px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: $color;
+    border: 3px solid $borderColor;
+    transition: 0.6s ease;
+}
+
+@mixin input {
+    height: 50px;
+	padding: 10px;
+	border: 1px solid #d9dadc;
+    transition: 0.6s ease;
+    font-size: 18px;
+    
+    &:focus {
+        border: 1px solid #222326;
+	    border-radius: 0;
+	    outline: none;
+    }
+}
